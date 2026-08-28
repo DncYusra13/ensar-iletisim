@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensar İletişim | Teknolojinin Güvenli Adresi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Ensar İletişim Logo" class="site-logo">
+            <div class="logo-text">
+                <span class="brand-name">ENSAR</span>
+                <span class="brand-sub">İLETİŞİM</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#anasayfa" class="active">Ana Sayfa</a>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#fiyat-hesapla">Fiyat Al</a>
+            <a href="#servis-takip">Servis Takip</a>
+            <a href="#galeri">Dükkanımız</a>
+            <a href="#yorumlar">Yorumlar</a>
+            <a href="#iletisim" class="nav-btn">İletişim</a>
+            
+            <button id="themeToggleBtn" onclick="temaDegistir()" title="Temayı Değiştir" style="background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.4); color: #d4af37; width: 38px; height: 38px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: 0.3s; margin-left: 5px;">
+                ☀️
+            </button>
+        </nav>
+    </header>
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Ensar İletişim Logo" class="site-logo">
+            <div class="logo-text">
+                <span class="brand-name">ENSAR</span>
+                <span class="brand-sub">İLETİŞİM</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#anasayfa" class="active">Ana Sayfa</a>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#fiyat-hesapla">Fiyat Al</a>
+            <a href="#servis-takip">Servis Takip</a>
+            <a href="#yorumlar">Yorumlar</a>
+            <a href="#iletisim" class="nav-btn">İletişim</a>
+        </nav>
+    </header>
+
+    <section id="anasayfa" class="hero">
+        <div class="hero-content">
+            <span class="hero-badge">👑 Teknolojinin Güvenli Adresi</span>
+            <h1>Profesyonel Teknik Servis & Çözüm Merkezi</h1>
+            <p>Akıllı telefon, tablet ve bilgisayarlarınız için orijinal parça garantili, hızlı ve güvenilir tamir hizmetleri.</p>
+            
+            <div class="quick-actions">
+                <a href="#servis-takip" class="action-card">
+                    <span class="action-icon">🔍</span>
+                    <h3>Arıza Sorgula</h3>
+                    <p>Cihazının durumunu öğren</p>
+                </a>
+                <a href="#fiyat-hesapla" class="action-card">
+                    <span class="action-icon">💰</span>
+                    <h3>Fiyat Hesapla</h3>
+                    <p>Anında tahmini onarım ücreti</p>
+                </a>
+                <a href="https://wa.me/905551234567?text=Merhaba%20Ensar%20İletişim,%20cihazım%20için%20bilgi%20almak%20istiyorum." target="_blank" class="action-card whatsapp-card">
+                    <span class="action-icon">💬</span>
+                    <h3>Canlı Destek</h3>
+                    <p>WhatsApp ile bağlan</p>
+                </a>
+                <a href="#iletisim" class="action-card">
+                    <span class="action-icon">📍</span>
+                    <h3>Adres & Konum</h3>
+                    <p>Yol tarifi al</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hizmetler" class="services">
+        <div class="section-title">
+            <h2>Hizmetlerimiz</h2>
+            <p>Cihazlarınız için en güvenilir onarım çözümleri</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Ekran Değişimi</h3>
+                <p>Orijinal panellerle kırık, çatlak ekran onarımı ve dokunmatik testi.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔋</div>
+                <h3>Batarya Değişimi</h3>
+                <p>Orijinal pil değişimi ile ilk günkü pil performansına kavuşun.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔌</div>
+                <h3>Şarj Soketi Tamiri</h3>
+                <p>Temassızlık, veri aktarım sorunları ve şarj almama çözümleri.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h3>Anakart Onarımı</h3>
+                <p>Uzman kadro ile mikro lehimleme, entegre ve çip değişimi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fiyat-hesapla" class="calculator-section">
+        <div class="section-title">
+            <h2>Onarım Fiyat Hesaplayıcı</h2>
+            <p>Cihazınızın markasını ve arızasını seçerek tahmini fiyat öğrenin</p>
+        </div>
+        <div class="calculator-box">
+            <div class="calc-group">
+                <label>Cihaz Türü / Marka:</label>
+                <select id="cihazTuru">
+                    <option value="iphone">iPhone</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="xiaomi">Xiaomi / Diğer</option>
+                </select>
+            </div>
+            <div class="calc-group">
+                <label>Yaşanan Arıza:</label>
+                <select id="arizaTuru">
+                    <option value="ekran">Ekran Değişimi</option>
+                    <option value="batarya">Batarya Değişimi</option>
+                    <option value="soket">Şarj Soketi Onarımı</option>
+                    <option value="kamera">Kamera / Cam Değişimi</option>
+                </select>
+            </div>
+            <button onclick="fiyatHesapla()" class="btn-primary calc-btn">Fiyat Hesapla</button>
+            <div id="fiyatSonuc" class="calc-result">
+                Seçim yapın ve tahmini fiyatı görün.
+            </div>
+        </div>
+    </section>
+
+    <section id="servis-takip" class="tracking-section">
+        <div class="section-title">
+            <h2>Servis Takip Sistemi</h2>
+            <p>Cihazınızın güncel durumunu anlık olarak sorgulayın</p>
+        </div>
+        <div class="tracking-container">
+            <div class="tracking-box">
+                <input type="text" id="tcInput" placeholder="Telefon Numarası Girin (Örn: 5551234567)..." />
+                <button onclick="sorgula()" class="btn-primary">Sorgula</button>
+            </div>
+            <div id="sonucKutusu" class="result-box"></div>
+        </div>
+    </section>
+
+    <section id="yorumlar" class="reviews-section">
+        <div class="section-title">
+            <h2>Müşteri Yorumları</h2>
+            <p>Bizi tercih eden değerli müşterilerimizin memnuniyeti</p>
+        </div>
+       
+
+        </div>
+    </section>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"iPhone 13 ekranımı yarım saat içinde orijinaliyle değiştirdiler. İlgileri ve hızları harikaydı, teşekkürler Ensar İletişim!"</p>
+                <h4>— Burak Yılmaz</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Samsung telefonum şarj almıyordu, başka yerler anakart yanmış demişti. Burası kısa sürede şarj soketini çözdü, dürüst esnaf."</p>
+                <h4>— Zeynep Demir</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Fiyatlar gayet uygun ve en önemlisi garantili iş yapıyorlar. Artık telefonla ilgili tek adresim burası."</p>
+                <h4>— Emre Kaya</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="section-title">
+            <h2>Sık Sorulan Sorular</h2>
+            <p>Aklınıza takılan soruların yanıtları</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>❓ Tamir edilen cihazlara garanti veriliyor mu?</h3>
+                <p>Evet, yapılan tüm parça değişimleri ve onarımlar firmamız tarafından 6 aya kadar garantilidir.</p>
+            </div>
+            <div class="faq-item">
+                <h3>❓ Cihazım tamirdeyken içindeki veriler silinir mi?</h3>
+                <p>Ekran veya batarya değişimlerinde verileriniz kesinlikle silinmez, olduğu gibi kalır.</p>
+            </div>
+            <div class="faq-item">
+                <h3>❓ Tamir süreci ortalama ne kadar sürüyor?</h3>
+                <p>Ekran ve batarya değişimleri yoğunluğa bağlı olarak ortalama 30 - 60 dakika içinde tamamlanır.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM & HARİTA BÖLÜMÜ -->
+    
+                <!-- İLETİŞİM & HARİTA BÖLÜMÜ -->
+    <section id="iletisim" class="contact-section">
+        <div class="section-title">
+            <h2>Bize Ulaşın</h2>
+            <p>Mağazamızı ziyaret edin veya hemen iletişime geçin</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>📍 Adres</h3>
+                    <p>Merkez Mahallesi, Teknoloji Caddesi No: 42, Tamir İş Merkezi</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Telefon & WhatsApp</h3>
+                    <!-- AŞAĞIDAKİ "05416519396" YAZAN YERE KENDİ TELEFON NUMARANI YAZ -->
+                    <p><a href="tel:05416519396" style="color: #cccccc; text-decoration: none;">+90 (541) 651 93 96</a></p>
+                     <p><a href="tel:05446772806" style="color: #cccccc; text-decoration: none;">+90 (544) 677 28 06</a></p>
+                </div>
+                <div class="whatsapp-box">
+                    <!-- AŞAĞIDAKİ "905416519396" YAZAN YERE BAŞINDA 0 OLMADAN NUMARANI YAZ (Örn: 905421234567) -->
+                    <a href="https://wa.me/905416519396?text=Merhaba%20Ensar%20İletişim,%20cihazım%20için%20bilgi%20almak%20istiyorum." target="_blank" class="whatsapp-btn">
+                        💬 WhatsApp ile Hemen Destek Al
+                    </a>
+                </div>
+                <!-- YOL TARİFİ BUTONU -->
+                <div class="map-btn-box" style="margin-top: 15px;">
+                    <a href="https://maps.google.com/?q=Teknoloji+Caddesi+No:42" target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">
+                        🗺️ Google Haritalar ile Yol Tarifi Al
+                    </a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d29!3d41!2m3!1f0!2f0!3f0!3m2!1f1024!2f768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzAwLjAiTiAyOcKwMDAnMDAuMCJF!5e0!3m2!1str!2str!4v1600000000000" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+                <!-- YOL TARİFİ BUTONU -->
+                <div class="map-btn-box" style="margin-top: 15px;">
+                    <a href="https://maps.google.com/?q=Teknoloji+Caddesi+No:42" target="_blank" class="btn-primary" style="display: block; text-align: center; text-decoration: none;">
+                        🗺️ Google Haritalar ile Yol Tarifi Al
+                    </a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <!-- Şık ve Gerçekçi Google Maps Çerçevesi -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d29!3d41!2m3!1f0!2f0!3f0!3m2!1f1024!2f768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzAwLjAiTiAyOcKwMDAnMDAuMCJF!5e0!3m2!1str!2str!4v1600000000000" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+              
+           
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Ensar İletişim. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- SABİT TEMA DEĞİŞTİRME BUTONU -->
+    <button id="themeToggleBtn" onclick="temaDegistir()" title="Temayı Değiştir">☀️</button>
+</body>
+</html>
